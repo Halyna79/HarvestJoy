@@ -1,0 +1,50 @@
+
+
+.container {
+    max-width: 320px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.vegetable-img {
+    padding: 40px 20px;
+    width: 375px;
+    height: 532px;
+    background: #7a3145;
+}
+
+.vegetable-text {
+    padding: 80px 20px;
+    width: 375px;
+    height: 676px;
+    background: #576f35;
+}
+
+.vegetable-text-num {
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+    fill: #7a3145;
+    stroke-width: 5px;
+    stroke: #d4bfc4;
+}
+
+.vegetable-text-numbers {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.11111;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+}
+
+
+/* media */
+
+/* @media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 20;
+    }
+} */
