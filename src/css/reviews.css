@@ -11,9 +11,8 @@
   background-color: var(--color-white);
 }
 
-.reviews, 
-.reviews * {
-  box-sizing: border-box;
+.reviews-container {
+  min-width: unset;
 }
 
 .reviews-title {
