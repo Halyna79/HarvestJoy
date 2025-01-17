@@ -1,7 +1,8 @@
 
 
 .vegetable {
-    display: block;
+    /* display: block; */
+    display: flex;
 
     min-width: 320px;
     max-width: 767px;
@@ -22,6 +23,7 @@
 
 
 .vegetable-text {
+    z-index: -999;
     padding: 80px 20px;
     max-width: 767px;
     /* width: 375px; */
@@ -31,22 +33,7 @@
     
 }
 
-.veget-text {
-    display: flex;
-    gap: 24px;
-    padding: 12px 27px;
-    border-radius: 15px;
-    padding-left: 24px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    /* padding: 12px 27px 12px 24px; */
-    /* width: 335px; */
-    max-width: 767px;
-    height: auto;
-    /* height: 84px; */
-    background: #fbfbfb;
-    margin: 20px;
-}
+
 
 .vegetable-texts {
     /* width: 335px; */
@@ -78,13 +65,33 @@
     color: #fbfbfb;
 }
 
+.veget-text {
+    display: flex;
+    gap: 24px;
+    /* padding: 12px 27px; */
+    border-radius: 15px;
+    padding-left: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    /* padding: 12px 27px 12px 24px; */
+    /* width: 335px; */
+    max-width: 767px;
+    height: auto;
+    background: #fbfbfb;
+    margin: 20px;
+}
+
+
+
 .vegetable-text-num {
+    z-index: 10;
     width: 52px;
     height: 52px;
     border-radius: 100%;
     fill: #7a3145;
     stroke-width: 5px;
     stroke: #d4bfc4;
+   
 }
 
 .vegetable-text-numbers {
@@ -97,6 +104,24 @@
     color: #fbfbfb;
 
     text-align: center;
+}
+
+.veget-text {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #858585;
+    align-content: center;
+}
+
+.vegetable-text-ver {
+    
+}
+
+.veg-t-v {
+    font-weight: 700;
+    color: #141414;
 }
 
 
@@ -116,7 +141,7 @@
         padding: 100px 64px;
         width: 100%;
         height: auto;
-        position: absolute;
+        
     }
 
     .vegetable-text {
@@ -129,7 +154,7 @@
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
     .vegetable {
-        display: flex;
+        /* display: flex; */
 
         min-width: 1280px;
 
