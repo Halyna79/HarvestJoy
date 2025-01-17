@@ -1,4 +1,5 @@
 .hero-style {
+    padding-top: 100px;
     background: #576f35;
     display: flex;
     flex-direction:column;
@@ -36,6 +37,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .hero-style{
+        padding-top: 120px;
+    }
+    
     .hero-text {
         padding-left: 32px;
         padding-right: 32px;
@@ -57,10 +62,11 @@
 
 @media only screen and (min-width: 1280px) {
     .hero-style {
+        padding-top: 0;
         flex-direction: row;
     }
     .hero-text {
-        padding-top: 148px;
+        padding-top: 146px;
         padding-left: 100px;
         padding-right: 36px;
         row-gap: 128px;
@@ -70,7 +76,7 @@
         padding-right: 32px;
     }
     .hero-img {
-        width: 2000px;
-        height: 100%;
+        width: 2250px;
+        height: 740px;
     }
 }

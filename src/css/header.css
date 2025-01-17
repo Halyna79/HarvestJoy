@@ -1,0 +1,127 @@
+.header-logo-li{
+    display: block;
+    
+}
+.header-style{
+    background-color: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+    left: auto;
+    min-width: 380px;
+    z-index: 10;
+}
+
+.header-logo-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 135px;
+}
+
+.logo-style{
+    stroke: #FFFFFF;
+    fill: #FFFFFF;
+}
+
+.burger-icon{
+    stroke: #FFFFFF;
+}
+
+.header-btn {
+    border: none;
+    background-color: transparent;
+    display: block;
+    cursor: pointer;
+}
+
+.header-menu{
+    display: none;
+}
+
+.header-nav, 
+.header-nav-ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nav-ul{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.nav-li{
+    display: flex;
+    border: 1px solid #fbfbfb;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    color: #fbfbfb;
+    font-weight: 500;
+    line-height: 1.25;
+    text-align: center;
+    background-color: transparent;
+
+}
+
+.nav-shop{
+    border-radius: 30px;
+    padding: 16px 32px;
+    background: #7a3145;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.11111;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+}
+
+@media only screen and (min-width: 768px) {
+    .header-style {
+        left: auto;
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 32px;
+        max-width: 1280px;
+    }
+    .burger-icon{
+        width: 40px;
+        height: 40px;
+    }
+    .header-logo-ul {
+        gap: 448px;
+    }
+
+    .header-style {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .header-style {
+        max-width: 1290px;
+        left: auto;
+        padding-left: 100px;
+        padding-right: 100px;
+        display: flex;
+        column-gap: 366px;
+    }
+    .header-menu {
+        display: flex;
+    }
+    .header-btn{
+        display: none;
+    }
+
+    .header-logo-ul {
+        gap: 0px;
+    }
+}
