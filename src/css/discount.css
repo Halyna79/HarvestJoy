@@ -1,4 +1,4 @@
-.discount {
+.container-discount {
     padding: 80px 20px;
     margin: 0 auto;
 }
@@ -14,14 +14,12 @@
 .discount-hidhlight {
     display: inline-block;
     border-radius: 12px;
-    width: 335px;
-    height: 102px;
     background-color: #576F35;
     color: #FBFBFB;
 }
 
 @media only screen and (min-width: 768px) {
-    .discount {
+    .container-discount {
             padding: 100px 32px;
         }
     
@@ -29,15 +27,10 @@
             font-size: 64px;
             line-height: 100%;
         }
-    
-    .discount-hidhlight {
-            width: 675px;
-            height: 86px;
-        }
 }
 
 @media only screen and (min-width: 1280px) {
-    .discount {
+    .container-discount {
             padding: 100px;
         }
     
@@ -45,8 +38,4 @@
             font-size: 76px;
         }
     
-        .discount-hidhlight {
-            width: 808px;
-            height: 84px;
-        }
 }
