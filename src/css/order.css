@@ -2,8 +2,8 @@
 
 .vegetable {
     display: flex;
-    min-width: 320px;
-    max-width: 767px;
+    /* min-width: 320px;
+    max-width: 767px; */
 }
 
 img {
@@ -20,6 +20,8 @@ picture {
 .container-veg {
     display: flex;
     flex-direction: column;
+    width: 375px;
+    margin: 0 auto;
 }
 
 .vegetable-img {
@@ -131,9 +133,13 @@ picture {
 @media only screen and (min-width: 768px) {
     
     .vegetable {
-        min-width: 768px;
-        max-width: 1279px;
-        height: auto;
+        /* min-width: 768px;
+        max-width: 1279px; */
+        /* height: auto; */
+    }
+
+    .container-veg {
+        width: 768px;
     }
 
     .vegetable-img {
@@ -173,13 +179,14 @@ picture {
 @media only screen and (min-width: 1280px) {
     
     .vegetable {
-        min-width: 1280px;
+        /* min-width: 1280px; */
         /* height: 760px; */
-        height: auto;
+        /* height: auto; */
     }
 
     .container-veg {
         flex-direction: row;
+        width: 1280px;
     }
 
     .vegetable-img {
