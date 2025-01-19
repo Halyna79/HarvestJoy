@@ -1,0 +1,302 @@
+.container {
+    min-width: 320px;
+}
+
+.harvest-section {
+    background-color: #576F35;
+    padding: 80px 20px;
+}
+
+.section-title {
+font-weight: 600;
+font-size: 48px;
+line-height: 108%;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: white;
+padding-bottom: 20px;
+}
+
+.harvest-span {
+color: #D4BFC4;
+}
+
+.harvest-text {
+font-family: 'Inter';
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 143%;
+color: white;
+padding-bottom: 40px;
+}
+
+.harvest-flex {
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+.harvest-form {
+background-color: white;
+border-radius: 30px;
+padding: 40px 20px;
+
+}
+
+.har-form-title {
+font-weight: 600;
+font-size: 28px;
+line-height: 100%;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+padding-bottom: 40px;
+}
+
+.harvest-second-span {
+    color: #7A3145;
+}
+
+.harvest-third-span {
+    color: #576F35;
+}
+
+
+.harvest-input {
+    border: 1px solid #858585;
+    border-radius: 30px;
+    
+    padding: 16px;
+    min-width: 223px;
+    height: 16px;
+    font-weight: 500;
+font-size: 14px;
+line-height: 143%;
+text-align: left;
+color: black;
+margin-bottom: 16px;
+}
+
+
+.harvest-text-area {
+border: 1px solid  #858585;
+border-radius: 15px;
+padding: 16px;
+min-width: 223px;
+height: 60px;  
+font-weight: 500;
+font-size: 14px;
+line-height: 143%;
+text-align: left;
+color: black;
+margin-bottom: 20px;
+}
+
+
+.harvest-send {
+    border-radius: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    min-width: 255px;
+    height: 52px;
+    font-weight: 600;
+font-size: 18px;
+line-height: 111%;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: white;
+background-color: #7A3145;
+}
+
+.harvest-send:hover {
+    border: 1px solid #D4BFC4;
+    background-color: #D4BFC4;
+    color: #7A3145;
+}
+
+.harvest-send:focus {
+    border: 1px solid white;
+    background-color: white;
+    color: #7A3145;
+}
+
+
+
+.harvest-pic {
+    background-color: #7A3145;
+    border-radius: 30px;
+padding: 40px 20px;
+width: 335px;
+padding: 40px 20px;
+}
+
+
+.img {
+border-radius: 15px;
+
+}
+
+.network-p {
+margin-top: 20px;
+font-weight: 700;
+font-size: 14px;
+line-height: 143%;
+color: #D4BFC4;
+margin-bottom: 16px;
+}
+
+.soc-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.soc-link {
+ font-weight: 600;
+font-size: 18px;
+line-height: 111%;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: white;   
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+
+    .section-title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: white;
+    margin-right: 32px;
+    width: 640px;
+    padding-bottom: 24px;
+    }
+    
+    .harvest-text {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 125%;
+      color: white;
+      width: 640px;
+      padding-bottom: 52px;
+    }
+    
+    .harvest-flex {
+        margin-left: 64px;
+        margin-right: 64px;
+        gap: 32px;
+    }
+
+    .harvest-form {
+      padding: 72px 100px;
+    }
+    
+
+
+    .harvest-input {
+        width: 100%;
+        font-weight: 500;
+font-size: 16px;
+line-height: 125%;
+text-align: left;
+color: black;
+    }
+    
+    .harvest-text-area {
+        width: 100%;
+        font-weight: 500;
+font-size: 16px;
+line-height: 125%;
+text-align: left;
+color: black;
+    }
+    
+    .harvest-send {
+        width: 100%;
+    }
+
+    .harvest-pic {
+        width: 100%;
+        padding: 52px;
+    }
+
+    .img {
+        width: 536px;
+        height: auto;
+        margin-bottom: 52px;
+        border-radius: 15px;
+    }
+
+    .network-p {
+        font-weight: 700;
+font-size: 16px;
+line-height: 125%; 
+margin-bottom: 16px;
+    }
+   
+    .soc-link {
+        font-weight: 600;
+font-size: 18px;
+line-height: 111%;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+    }
+
+    }
+
+
+    @media only screen and (min-width: 1280px) {
+        .container {
+          max-width: 1280px;
+        }
+
+    .harvest-section {
+        padding: 100px;
+    }
+
+     .section-title {
+        width: 751px;
+     }
+
+     .harvest-text {
+        width: 751px;
+     }
+
+     .harvest-flex {
+        margin: 0;
+        flex-wrap: nowrap;
+        gap: 32px;
+     }
+
+     .harvest-form {
+        width: calc((100% - 32px)/2);
+     }
+
+     .har-form-title {
+        font-weight: 600;
+font-size: 32px;
+line-height: 100%;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: black;
+     }
+ 
+     .harvest-pic {
+        width: calc((100% - 32px)/2);
+     }
+     
+     .img {
+        width: 428px;
+        height: auto;
+        margin-bottom: 80px;
+     }
+
+
+
+
+      }
