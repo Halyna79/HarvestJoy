@@ -1,0 +1,41 @@
+.container-discount {
+    padding: 80px 20px;
+    margin: 0 auto;
+}
+
+.discount-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 108%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+}
+
+.discount-hidhlight {
+    display: inline-block;
+    border-radius: 12px;
+    background-color: #576F35;
+    color: #FBFBFB;
+}
+
+@media only screen and (min-width: 768px) {
+    .container-discount {
+            padding: 100px 32px;
+        }
+    
+    .discount-title {
+            font-size: 64px;
+            line-height: 100%;
+        }
+}
+
+@media only screen and (min-width: 1280px) {
+    .container-discount {
+            padding: 100px;
+        }
+    
+        .discount-title {
+            font-size: 76px;
+        }
+    
+}
