@@ -2,8 +2,6 @@
 
 .vegetable {
     display: flex;
-    /* min-width: 320px;
-    max-width: 767px; */
 }
 
 img {
@@ -131,12 +129,6 @@ picture {
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
-    
-    .vegetable {
-        /* min-width: 768px;
-        max-width: 1279px; */
-        /* height: auto; */
-    }
 
     .container-veg {
         width: 768px;
@@ -177,12 +169,6 @@ picture {
 /* Styles for Desktop devices */
 
 @media only screen and (min-width: 1280px) {
-    
-    .vegetable {
-        /* min-width: 1280px; */
-        /* height: 760px; */
-        /* height: auto; */
-    }
 
     .container-veg {
         flex-direction: row;
@@ -191,6 +177,7 @@ picture {
 
     .vegetable-img {
         padding: 100px;
+        width: 640px;
         justify-content: center;
     }
 
@@ -202,6 +189,7 @@ picture {
 
     .vegetable-text {
         padding: 100px;
+        width: 640px;
     }
 
      .veget-text {
