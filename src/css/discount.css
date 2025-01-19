@@ -1,4 +1,5 @@
 .container-discount {
+    width: 375px;
     padding: 80px 20px;
     margin: 0 auto;
 }
@@ -20,6 +21,7 @@
 
 @media only screen and (min-width: 768px) {
     .container-discount {
+        width: 768px;
             padding: 100px 32px;
         }
     
@@ -31,6 +33,7 @@
 
 @media only screen and (min-width: 1280px) {
     .container-discount {
+        width: 1280px;
             padding: 100px;
         }
     
