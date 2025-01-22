@@ -1,5 +1,4 @@
-
-.mob-menu {
+.mob-menu{
   position: fixed;
   width: 100%;
   height: 100%;
@@ -136,6 +135,7 @@ color: #7A3145;
     line-height: 125%;
     text-align: center;
     }
+  
 
     .mob-shop {
     border-radius: 30px;
@@ -149,14 +149,13 @@ color: #7A3145;
     letter-spacing: -0.01em;
     white-space: nowrap;
     }
-    
-
-}
-
-
+  }
+  
 @media screen and (min-width: 1280px) {
   .mob-menu {
   display: none;
   }
 }
 
+  
+ 
