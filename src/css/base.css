@@ -1,13 +1,5 @@
 :root {
   font-family: "Inter Tight", sans-serif;
-  font-size: 76px;
-  line-height: 100%;
-  font-weight: 600;
-
-  
-  color: #141414;
-  
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -16,18 +8,11 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
   margin: 0;
 }
 
-main {
-  flex-grow: 1;
-}
-main:has(.back-link) {
-  text-align: center;
+section {
+  padding: 80px 20px;
 }
 
 a {
@@ -37,7 +22,7 @@ a {
 
 a:hover,
 a:focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 button {
@@ -54,26 +39,47 @@ img {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h3{
+  text-transform: uppercase;
+}
+
+h2 {
   font-weight: 600;
+  font-size: 28px;
   line-height: 100%;
   text-transform: uppercase;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
 }
 
 p {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 125%;
+  font-size: 14px;
+  line-height: 143%;
 }
 
-ul,
-ol {
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media only screen and (min-width: 768px) {
+    h2 {
+      font-size: 64px;
+    }
+
+    p {
+      line-height: 125%;
+      font-size: 16px;
+    }
+
+    section {
+      padding: 80px 20px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    section {
+      padding: 100px;
+    }
 }
