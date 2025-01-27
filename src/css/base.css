@@ -1,11 +1,12 @@
 :root {
   font-family: "Inter Tight", sans-serif;
-  font-size: 14px;
-  line-height: 143%;
-  font-weight: 500;
+  font-size: 76px;
+  line-height: 100%;
+  font-weight: 600;
 
+  
   color: #141414;
-  background-color: rgba(255, 255, 255, 0.87);
+  
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,4 +28,52 @@ main {
 }
 main:has(.back-link) {
   text-align: center;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 100%;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
+p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
