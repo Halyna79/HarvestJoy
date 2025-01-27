@@ -1,15 +1,7 @@
-.container-discount {
-    width: 375px;
-    padding: 80px 20px;
-    margin: 0 auto;
-}
-
 .discount-title {
-    font-weight: 600;
     font-size: 48px;
     line-height: 108%;
     letter-spacing: -0.01em;
-    text-transform: uppercase;
 }
 
 .discount-hidhlight {
@@ -20,11 +12,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .container-discount {
-        width: 768px;
-            padding: 100px 32px;
-        }
-    
     .discount-title {
             font-size: 64px;
             line-height: 100%;
@@ -32,12 +19,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-    .container-discount {
-        width: 1280px;
-            padding: 100px;
-        }
-    
-        .discount-title {
+    .discount-title {
             font-size: 76px;
         }
     
