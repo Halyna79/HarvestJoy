@@ -1,5 +1,5 @@
 :root {
-  font-family: "Inter Tight", sans-serif;
+  font-family: 'Inter Tight', sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -12,6 +12,7 @@ body {
 }
 
 section {
+  width: 375px;
   padding: 80px 20px;
   margin: 0 auto;
 }
@@ -40,14 +41,14 @@ img {
 }
 
 h1,
-h3{
+h3 {
   text-transform: uppercase;
 }
 
 h2 {
   font-weight: 600;
-  font-size: 28px;
-  line-height: 100%;
+  font-size: 48px;
+  line-height: 108.3%;
   text-transform: uppercase;
   letter-spacing: -0.015em;
 }
@@ -65,22 +66,27 @@ ul {
 }
 
 @media only screen and (min-width: 768px) {
-    h2 {
-      font-size: 64px;
-    }
+  h2 {
+    line-height: 100%;
+    font-size: 64px;
+  }
 
-    p {
-      line-height: 125%;
-      font-size: 16px;
-    }
+  p {
+    line-height: 125%;
+    font-size: 16px;
+  }
 
-    section {
-      padding: 100px 32px;
-    }
+
+  section {
+    width: 768px;
+    padding: 100px 32px;
+  }
+
 }
 
 @media only screen and (min-width: 1280px) {
-    section {
-      padding: 100px;
-    }
+  section {
+    width: 1280px;
+    padding: 100px;
+  }
 }

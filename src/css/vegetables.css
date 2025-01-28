@@ -1,7 +1,4 @@
 .ov-section {
-  margin-inline: auto;
-  width: 375px;
-  padding: 80px 20px;
   --color-black: #141414;
   --color-blush: #d4bfc4;
   --color-chianty: #7a3145;
@@ -9,17 +6,8 @@
   background-color: var(--color-chianty);
 }
 
-.ov-container {
-  min-width: unset;
-}
-
 .ovs-title {
-  line-height: 1.08;
-  font-size: 48px;
-  font-weight: 600;
-  letter-spacing: -0.015em;
   color: var(--color-white);
-  text-transform: uppercase;
 }
 
 .ovs-title span {
@@ -27,9 +15,7 @@
 }
 
 .ovs-desc {
-  margin-top: 14px;
-  line-height: 1.43;
-  font-weight: 500;
+  margin-top: 20px;
   color: var(--color-white);
 }
 
@@ -58,39 +44,27 @@
 
 .ov-price {
   margin-top: 12px;
-  line-height: 1.43;
-  font-size: 14px;
-  font-weight: 500;
   color: var(--color-black);
 }
 
 .ov-image-container {
+  display: block;
   margin-top: 12px;
-  /* width: 100%; */
+  width: 280px;
   height: 240px;
 }
 
 .ov-image {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
 @media (min-width: 768px) {
-  .ov-section {
-    width: 768px;
-    padding: 100px 32px;
-  }
-
-  .ovs-title {
-    line-height: 1;
-    font-size: 64px;
-  }
-
   .ovs-desc {
     margin-top: 24px;
     width: 626px;
-    line-height: 1.25;
-    font-size: 16px;
   }
 
   .ovs-list {
@@ -107,19 +81,9 @@
   .ov-title {
     font-size: 32px;
   }
-
-  .ov-price {
-    line-height: 1.25;
-    font-size: 16px;
-  }
 }
 
 @media (min-width: 1280px) {
-  .ov-section {
-    width: 1280px;
-    padding: 100px 100px;
-  }
-
   .ovs-item {
     width: calc((100% - 24px * 2) / 3);
     padding: 32px;
