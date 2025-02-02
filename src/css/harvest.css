@@ -4,15 +4,10 @@
 
 .harvest-section {
     background-color: #576F35;
-    padding: 80px 20px;
 }
 
 .section-title {
-font-weight: 600;
-font-size: 48px;
-line-height: 108%;
 letter-spacing: -0.01em;
-text-transform: uppercase;
 color: white;
 padding-bottom: 20px;
 }
@@ -41,7 +36,6 @@ flex-wrap: wrap;
 background-color: white;
 border-radius: 30px;
 padding: 40px 20px;
-
 }
 
 .har-form-title {
@@ -65,7 +59,6 @@ padding-bottom: 40px;
 .harvest-input {
     border: 1px solid #858585;
     border-radius: 30px;
-    
     padding: 16px;
     min-width: 223px;
     height: 16px;
@@ -94,8 +87,6 @@ margin-bottom: 20px;
 
 
 .harvest-send {
-    border-radius: 30px;
-    border: none;
     padding-top: 16px;
     padding-bottom: 16px;
     min-width: 255px;
@@ -168,8 +159,6 @@ color: white;
 
     .section-title {
     font-weight: 600;
-    font-size: 64px;
-    line-height: 100%;
     letter-spacing: -0.01em;
     text-transform: uppercase;
     color: white;
@@ -180,8 +169,6 @@ color: white;
     
     .harvest-text {
       font-weight: 500;
-      font-size: 16px;
-      line-height: 125%;
       color: white;
       width: 640px;
       padding-bottom: 52px;
@@ -255,10 +242,6 @@ text-transform: uppercase;
         .container {
           max-width: 1280px;
         }
-
-    .harvest-section {
-        padding: 100px;
-    }
 
      .section-title {
         width: 751px;
