@@ -20,6 +20,10 @@
 
 .menu-container {
   position: relative;
+  padding-top: 196px;
+  padding-bottom: -48px;
+  display: flex;
+  flex-direction: column;
   padding-top: 296px;
   padding-bottom: 52px;
   display: flex;
@@ -34,6 +38,7 @@
   height: 32px;
   position: absolute;
   right: 20px;
+  top: -80px;
   top: 20px;
   background: transparent;
   cursor: pointer;
@@ -158,6 +163,3 @@ color: #7A3145;
   display: none;
   }
 }
-
-  
- 
