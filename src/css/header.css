@@ -1,9 +1,7 @@
 section.header{
-    padding: 0 20px;
+    padding: 0;
 }
-.header-logo{
-    
-}
+
 .header-logo-li{
     display: block;
     
@@ -15,7 +13,7 @@ section.header{
     padding-top: 20px;
     position: absolute;
     top: 0;
-    left: 0;
+    left: auto;
     min-width: 380px;
     z-index: 10;
 }
