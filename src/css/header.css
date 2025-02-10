@@ -1,15 +1,21 @@
+section.header{
+    padding: 0 20px;
+}
+.header-logo{
+    
+}
 .header-logo-li{
     display: block;
     
 }
 .header-style{
     background-color: transparent;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-top: 20px;
     position: absolute;
     top: 0;
-    left: auto;
+    left: 0;
     min-width: 380px;
     z-index: 10;
 }
@@ -18,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 135px;
+    gap: 80px;
 }
 
 .logo-style{
@@ -118,7 +124,7 @@
         height: 40px;
     }
     .header-logo-ul {
-        gap: 448px;
+        gap: 400px;
     }
 
     .header-style {
@@ -133,7 +139,6 @@
         max-width: 1290px;
         left: auto;
         padding-left: 100px;
-        padding-right: 100px;
         display: flex;
         column-gap: 366px;
     }
