@@ -45,6 +45,9 @@ section.header{
     display: none;
 }
 
+.header-nav{
+    margin-right: 100px;
+}
 .header-nav, 
 .header-nav-ul{
     display: flex;
@@ -134,9 +137,10 @@ section.header{
 
 @media only screen and (min-width: 1280px) {
     .header-style {
-        max-width: 1290px;
+        width: 1280px;
         left: auto;
         padding-left: 100px;
+        padding-right: 0;
         display: flex;
         column-gap: 366px;
     }
