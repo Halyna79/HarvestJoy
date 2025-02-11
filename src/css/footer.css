@@ -7,12 +7,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    
 }
 
 .footer-first {
     width: 100%;
 }
+
 
 .icon-logo {
     fill: white;
@@ -24,7 +24,6 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 143%;
-
     color: white;
 }
 
@@ -88,12 +87,15 @@ color: #D4BFC4;
 
 @media only screen and (min-width: 768px) {
     
-
+.footer {
+    padding: 32px;
+}
 
     .all-footer {
         display: flex;
         flex-wrap: nowrap;
         gap: 212px;
+
     }
 
     .footer-first {
@@ -144,6 +146,10 @@ color: #D4BFC4;
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
    
+
+    footer {
+padding: 52px 100px;
+    }
 
 
     .all-footer {
