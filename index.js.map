@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"index.js","sources":["../src/main.js"],"sourcesContent":["import { openModal, closeModal } from \"./js/modal.js\";\n\nconst modalPrivacy = document.getElementById(\"modal-privacy\");\nconst modalCookie = document.getElementById(\"modal-cookie\");"],"names":[],"mappings":"ssBAEqB,SAAS,eAAe,eAAe,EACxC,SAAS,eAAe,cAAc"}
