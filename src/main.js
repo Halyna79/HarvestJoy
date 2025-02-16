@@ -1,4 +1,5 @@
-import { openModal, closeModal } from "./js/modal.js";
+import { setupFooterModals } from "./js/footer.js";
 
-const modalPrivacy = document.getElementById("modal-privacy");
-const modalCookie = document.getElementById("modal-cookie");
+document.addEventListener("DOMContentLoaded", function () {
+    setupFooterModals();
+});

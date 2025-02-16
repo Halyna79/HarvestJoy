@@ -14,7 +14,7 @@
     transition: opasity 0.3s ease, visibility 0.3s ease;
 }
 
-.modal .show {
+.modal.show {
     opacity: 1;
     visibility: visible;
 }
@@ -29,7 +29,7 @@
     transition: transform 0.3s ease;
 }
 
-.modal .show .modal-content {
+.modal.show .modal-content {
     transform: scale(1);
 }
 
