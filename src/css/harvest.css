@@ -150,7 +150,11 @@ text-transform: uppercase;
 color: white;   
 }
 
-
+.slash-span::after {
+    content: " /";
+    color: white; 
+    margin-left: 8px;
+    }
 
 @media only screen and (min-width: 768px) {
 
@@ -209,6 +213,7 @@ color: black;
 
     .harvest-pic {
         width: 100%;
+        padding: 52px;
     }
 
     .img {
@@ -223,6 +228,10 @@ line-height: 125%;
 margin-bottom: 16px;
     }
    
+    .soc-items {
+        gap: 12px;
+    }
+
     .soc-link {
         font-weight: 600;
 font-size: 18px;
@@ -230,6 +239,11 @@ line-height: 111%;
 letter-spacing: -0.01em;
 text-transform: uppercase;
     }
+
+    .slash-span::after {
+        margin-left: 12px;
+        }
+
 
     }
 
@@ -283,6 +297,7 @@ padding-bottom: 52px;
  
      .harvest-pic {
         width: calc((100% - 32px)/2);
+        padding: 52px 48px 0 48px;
      }
      
      .img {
