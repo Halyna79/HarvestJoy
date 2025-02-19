@@ -39,7 +39,7 @@
   border-radius: 24px;
   border: 1px solid var(--color-blush);
   width: 335px;
-  padding: 19px 15px;
+  padding: 19px 22.5px;
   text-align: center;
 }
 
@@ -77,19 +77,23 @@
     margin-top: 52px;
     height: 248px;
   }
-  
+
   .reviews-list {
     gap: 24px;
   }
 
   .reviews-item {
     width: 340px;
-    padding: 19px;
+    padding: 19px 25px;
   }
 }
 
 @media (min-width: 1280px) {
   .reviews-item {
     width: calc((100% - 24px * 2) / 3);
+  }
+
+  .reviews-item {
+    padding-inline: 27px;
   }
 }
