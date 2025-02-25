@@ -55,8 +55,8 @@
 }
 
 .ov-image {
-  width: 100%;
-  aspect-ratio: 280 / 240;
+  width: 280px;
+  height: 240px;
   object-fit: cover;
   object-position: center;
 }
@@ -95,6 +95,6 @@
   }
 
   .ov-image {
-    aspect-ratio: 280 / 244;
+    height: 244px;
   }
 }
