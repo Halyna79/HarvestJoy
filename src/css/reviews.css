@@ -116,6 +116,7 @@
   .reviews-list {
     gap: 24px;
     width: unset;
+    animation-duration: 12s;
   }
 
   .reviews-item {
@@ -127,13 +128,13 @@
     0% {
       transform: translateX(0%);
     }
-    58% {
+    42% {
       transform: translateX(0%);
     }
-    64% {
+    50% {
       transform: translateX(-51.7%);
     }
-    95% {
+    92% {
       transform: translateX(-51.7%);
     }
     100% {
