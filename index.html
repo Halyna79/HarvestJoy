@@ -5,21 +5,721 @@
     <link rel="icon" type="image/svg+xml" href="/HarvestJoy/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HarvestJoy</title>
+
+    <style>h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/HarvestJoy/assets/InterTight-100-900-CbfoEWwi.woff2') format('woff2');
+}
+
+:root {
+  font-family: 'Inter Tight', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+section, footer, header {
+  width: 375px;
+  padding: 80px 20px;
+  margin: 0 auto;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h3 {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 108.3%;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+}
+
+p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media only screen and (min-width: 768px) {
+  h2 {
+    line-height: 100%;
+    font-size: 64px;
+  }
+
+  p {
+    line-height: 125%;
+    font-size: 16px;
+  }
+
+
+  section, footer, header {
+    width: 768px;
+    padding: 100px 32px;
+  }
+
+}
+
+@media only screen and (min-width: 1280px) {
+  section, footer, header {
+    width: 1280px;
+    padding: 100px;
+  }
+}
+
+.header{
+    padding: 0;
+}
+
+.header-logo-li{
+    display: block;
+    
+}
+
+.header-style{
+    background-color: transparent;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+    left: auto;
+    min-width: 380px;
+    z-index: 10;
+}
+
+.header-logo-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.logo-style{
+    stroke: #FFFFFF;
+    fill: #FFFFFF;
+}
+
+.burger-icon{
+    stroke: #FFFFFF;
+}
+
+.header-btn {
+    border: none;
+    background-color: transparent;
+    display: block;
+    cursor: pointer;
+}
+
+.header-menu{
+    display: none;
+}
+
+.header-nav{
+    margin-right: 100px;
+}
+
+.header-nav, 
+.header-nav-ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nav-ul{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.nav-li{
+    display: flex;
+    border: 1px solid #fbfbfb;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    color: #fbfbfb;
+    font-weight: 500;
+    line-height: 1.25;
+    text-align: center;
+    background-color: transparent;
+
+}
+
+.style-li:hover{
+    background-color: #D4BFC4;
+    color: #7a3145;
+}
+
+.style-li:active {
+    background-color: #FBFBFB;
+    color: #7a3145;
+}
+
+.nav-shop{
+    border-radius: 30px;
+    padding: 16px 32px;
+    background: #7a3145;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.11111;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+}
+
+.style-nav-shop:hover{
+    background-color: #D4BFC4;
+    color: #7a3145;
+}
+
+.style-nav-shop:active {
+    background-color: #FBFBFB;
+    color: #7a3145;
+}
+
+@media only screen and (min-width: 768px) {
+    .header-style {
+        left: auto;
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 32px;
+        max-width: 1280px;
+    }
+    .burger-icon{
+        width: 40px;
+        height: 40px;
+    }
+    .header-logo-ul {
+        gap: 400px;
+    }
+
+    .header-style {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .header-style {
+        width: 1280px;
+        left: auto;
+        padding-left: 100px;
+        padding-right: 0;
+        display: flex;
+        column-gap: 366px;
+    }
+    .header-menu {
+        display: flex;
+    }
+    .header-btn{
+        display: none;
+    }
+
+    .header-logo-ul {
+        gap: 0px;
+    }
+}
+
+.mob-menu{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(87, 111, 53);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.mob-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  padding: 0;
+}
+
+.menu-container {
+  position: relative;
+  padding-top: 196px;
+  padding-bottom: -48px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 296px;
+  padding-bottom: 52px;
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 100%;
+  align-items: center;
+}
+
+.btn-close {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 20px;
+  top: -80px;
+  top: 20px;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  z-index: 999;
+  }
+
+.icon-close {
+  fill: rgb(255, 255, 255);
+  stroke: rgb(255, 255, 255);
+}
+
+.list {
+display: flex;
+flex-direction: column;
+
+align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.menu-item {
+  border: 1px solid #FBFBFB;
+  border-radius: 12px;
+  width: 116px;
+  text-align: center;
+  color: #FBFBFB;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-item:hover,
+.menu-item:focus {
+  background-color: white;
+}
+
+.menu-item:hover .menu-link {
+color: #7A3145;
+}
+
+.menu-item:focus .menu-link {
+  color: #7A3145;
+}
+
+.mob-shop {
+  margin-top: auto; 
+  border: none;
+  border-radius: 30px;
+  width: 175px;
+  background-color: #7A3145;
+  padding: 16px 0;
+  color: #FBFBFB;
+  text-transform: uppercase;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-shop:hover,
+.mob-shop:focus {
+  background-color: white;
+  color: #7A3145;
+}
+
+@media only screen and (min-width: 768px) {
+    
+  .mob-menu {
+    background-color: rgba(20, 20, 20, 40%); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-container {
+  background-color: rgb(87, 111, 53);
+  width: 351px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin-bottom: 52px;
+}
+
+.mob-menu-close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  }
+
+  .menu-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+    }
+  
+
+    .mob-shop {
+    border-radius: 30px;
+    padding-top: 16px 32px;
+    width: 157px;
+    height: 52px;
+    font-family: "Inter Tight", serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 111%;
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+    }
+  }
+
+@media screen and (min-width: 1280px) {
+  .mob-menu {
+  display: none;
+  }
+}
+
+section.hero {
+    padding: 0;
+}
+
+.hero-style {
+    padding-top: 100px;
+    background: #576f35;
+    display: flex;
+    flex-direction:column;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    
+}
+
+.hero-title{
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+}
+
+.hero-subtitle{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #fbfbfb;
+}
+
+.hero-img{
+
+    width: 2000px;
+    height: 100%;
+
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-style{
+        padding-top: 120px;
+    }
+    
+    .hero-text {
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 52px;
+        row-gap: 24px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 52px;
+    }
+    .hero-title{
+        font-size: 76px;
+    }
+    .hero-subtitle{
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) {
+    .hero-style {
+        padding-top: 0;
+        flex-direction: row;
+    }
+    .hero-text {
+        padding-top: 146px;
+        padding-left: 100px;
+        padding-right: 36px;
+        row-gap: 128px;
+    }
+
+    .hero-subtitle{
+        padding-right: 32px;
+    }
+    .hero-img {
+        width: 2250px;
+        height: 740px;
+    }
+    .hero-title {
+        width: 504px;
+    }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
+}
+
+.order {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  --color-black: #141414;
+  --color-chianty: #7a3145;
+  --color-green: #576f35;
+  --color-grey: #858585;
+  --color-blush: #d4bfc4;
+  --color-white: #fbfbfb;
+}
+
+.order-image-box {
+  padding: 40px 20px;
+  background-color: var(--color-chianty);
+}
+
+.order-image-container {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.order-desc-box {
+  padding: 80px 20px;
+  background-color: var(--color-green);
+}
+
+.order-title {
+  line-height: 1;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.order-title-colored {
+  color: var(--color-blush);
+}
+
+.order-desc {
+  margin-top: 20px;
+  color: var(--color-white);
+}
+
+.order-list {
+  margin: 40px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.order-item {
+  margin-top: 20px;
+  border-radius: 15px;
+  padding: 12px 24px;
+  background-color: var(--color-white);
+}
+
+.order-item:first-child {
+  margin-top: 0;
+}
+
+.order-item-desc {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: var(--color-grey);
+}
+
+.order-number-span {
+  flex-shrink: 0;
+  display: block;
+  margin: 5px;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-white);
+  background-color: var(--color-chianty);
+  box-shadow: 0 0 0 5px var(--color-blush);
+}
+
+.order-item-desc-colored {
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.order-item-desk-width {
+  display: inline-block;
+  max-width: 176px;
+}
+
+@media (min-width: 768px) {
+  .order-image-box {
+    padding: 100px 64px;
+  }
+
+  .order-desc-box {
+    padding: 100px 164px;
+  }
+
+  .order-title {
+    font-size: 32px;
+    color: var(--color-white);
+  }
+
+  .order-desc {
+    margin-top: 24px;
+  }
+
+  .order-list {
+    margin-top: 52px;
+  }
+
+  .order-item {
+    margin-top: 24px;
+    padding-right: 15px;
+  }
+
+  .order-item-desk-width {
+    max-width: unset;
+  }
+}
+
+@media (min-width: 1280px) {
+  .order {
+    flex-direction: row;
+  }
+
+  .order-image-box {
+    flex: 0 0 50%;
+    padding: 100px 100px;
+  }
+
+  .order-desc-box {
+    flex: 0 0 50%;
+    padding: 100px;
+  }
+
+  .order-list {
+    margin-top: 104px;
+  }
+}
+    </style>
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Karla:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap"
-      rel="stylesheet"
+      href="/HarvestJoy/assets/styles-PzTK4vj_.css"
+      media="print"
+      onload="this.media='all'"
     />
     <script type="module" crossorigin src="/HarvestJoy/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/HarvestJoy/assets/index-C8i3Fusr.css">
   </head>
   <body>
     <header class="header">
@@ -238,6 +938,7 @@
           class="ov-image"
           src="/HarvestJoy/assets/eggplant-DF8mwBci.webp"
           alt="Eggplant"
+          loading="lazy"
         />
       </picture>
     </li>
@@ -258,7 +959,12 @@
           srcset="/HarvestJoy/assets/leek-mob-2x-DFuG1B5D.webp, /HarvestJoy/assets/leek-mob-2x-DFuG1B5D.webp 2x"
           media="(max-width: 767px)"
         />
-        <img class="ov-image" src="/HarvestJoy/assets/leek-BtAFk5ci.webp" alt="Leek" />
+        <img
+          class="ov-image"
+          src="/HarvestJoy/assets/leek-BtAFk5ci.webp"
+          alt="Leek"
+          loading="lazy"
+        />
       </picture>
     </li>
 
@@ -278,7 +984,12 @@
           srcset="/HarvestJoy/assets/mushrooms-mob-2x-DC7Pxqkd.webp, /HarvestJoy/assets/mushrooms-mob-2x-DC7Pxqkd.webp 2x"
           media="(max-width: 767px)"
         />
-        <img class="ov-image" src="/HarvestJoy/assets/mushrooms-1Yp8S0KD.webp" alt="Mushrooms" />
+        <img
+          class="ov-image"
+          src="/HarvestJoy/assets/mushrooms-1Yp8S0KD.webp"
+          alt="Mushrooms"
+          loading="lazy"
+        />
       </picture>
     </li>
 
@@ -298,7 +1009,12 @@
           srcset="/HarvestJoy/assets/corn-mob-2x-DxO5qKe0.webp, /HarvestJoy/assets/corn-mob-2x-DxO5qKe0.webp 2x"
           media="(max-width: 767px)"
         />
-        <img class="ov-image" src="/HarvestJoy/assets/corn-DoGcAVfh.webp" alt="Corn" />
+        <img
+          class="ov-image"
+          src="/HarvestJoy/assets/corn-DoGcAVfh.webp"
+          alt="Corn"
+          loading="lazy"
+        />
       </picture>
     </li>
 
@@ -318,7 +1034,12 @@
           srcset="/HarvestJoy/assets/sweet-potatoes-mob-2x-CpQk787E.webp, /HarvestJoy/assets/sweet-potatoes-mob-2x-CpQk787E.webp 2x"
           media="(max-width: 767px)"
         />
-        <img class="ov-image" src="/HarvestJoy/assets/sweet-potatoes-DbSugfOI.webp" alt="Sweet potatoes" />
+        <img
+          class="ov-image"
+          src="/HarvestJoy/assets/sweet-potatoes-DbSugfOI.webp"
+          alt="Sweet potatoes"
+          loading="lazy"
+        />
       </picture>
     </li>
 
@@ -338,7 +1059,12 @@
           srcset="/HarvestJoy/assets/carrot-mob-2x-DMxhDvZP.webp, /HarvestJoy/assets/carrot-mob-2x-DMxhDvZP.webp 2x"
           media="(max-width: 767px)"
         />
-        <img class="ov-image" src="/HarvestJoy/assets/carrot-DPAKhOcw.webp" alt="Carrot" />
+        <img
+          class="ov-image"
+          src="/HarvestJoy/assets/carrot-DPAKhOcw.webp"
+          alt="Carrot"
+          loading="lazy"
+        />
       </picture>
     </li>
   </ul>
@@ -362,6 +1088,7 @@
           alt="John Wax"
           width="56"
           height="56"
+          loading="lazy"
         />
         <h3 class="review-title">John Wax</h3>
         <p class="review-desc">
@@ -378,6 +1105,7 @@
           alt="Victoria Romashenko"
           width="56"
           height="56"
+          loading="lazy"
         />
         <h3 class="review-title">Victoria Romashenko</h3>
         <p class="review-desc">
@@ -394,6 +1122,7 @@
           alt="Ihor Trachuk"
           width="56"
           height="56"
+          loading="lazy"
         />
         <h3 class="review-title">Ihor Trachuk</h3>
         <p class="review-desc">
@@ -407,61 +1136,86 @@
 </section>
 
       <section class="harvest">
-    
-      <h2 class="section-title">Fresh <span class="harvest-span">Harvest</span> Box has got you covered</h2>
-      <p class="harvest-text">Our boxes are packed with delicious, nutritious vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer!</p>
-      <div class="harvest-flex">
-      <form class="harvest-form">
-          <h3 class="har-form-title">Ordering <span class="harvest-second-span">from us </span>is quick and easy! Fill out <span class="harvest-third-span">the form </span>below and we will contact you !</h3>
-          <label class="harvest-label" for="full-name">  
-              <input class="harvest-input" type="text" name="full-name"
-              id="full-name" placeholder="Full name"/>
-          </label>
-          <label class="harvest-label" for="full-name">  
-              <input class="harvest-input" type="email" name="email"
-              id="email" placeholder="E-mail"/>
-          </label>
-          <label class="harvest-label">
-              <textarea class="harvest-text-area" name="comment" rows="3" placeholder="Comment">
-              </textarea>
-          </label>
-  
-          <button type="submit" class="harvest-send"> Send 
-          </button>
-  </form>
-  
-  <div class="harvest-pic">
+  <h2 class="section-title">
+    Fresh <span class="harvest-span">Harvest</span> Box has got you covered
+  </h2>
+  <p class="harvest-text">
+    Our boxes are packed with delicious, nutritious vegetables, perfect for
+    anyone looking to eat healthier or support local farmers. Order your box
+    today and start enjoying the best that nature has to offer!
+  </p>
+  <div class="harvest-flex">
+    <form class="harvest-form">
+      <h3 class="har-form-title">
+        Ordering <span class="harvest-second-span">from us </span>is quick and
+        easy! Fill out <span class="harvest-third-span">the form </span>below
+        and we will contact you !
+      </h3>
+      <label class="harvest-label" for="full-name">
+        <input
+          class="harvest-input"
+          type="text"
+          name="full-name"
+          id="full-name"
+          placeholder="Full name"
+        />
+      </label>
+      <label class="harvest-label" for="full-name">
+        <input
+          class="harvest-input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="E-mail"
+        />
+      </label>
+      <label class="harvest-label">
+        <textarea
+          class="harvest-text-area"
+          name="comment"
+          rows="3"
+          placeholder="Comment"
+        >
+        </textarea>
+      </label>
+
+      <button type="submit" class="harvest-send">Send</button>
+    </form>
+
+    <div class="harvest-pic">
       <picture class="img">
-          <source
+        <source
           srcset="/HarvestJoy/assets/woman-pouring-juice-i5wd6KKV.webp 1x, /HarvestJoy/assets/woman-pouring-juice-2x-DEFQPPVl.webp 2x"
-        media="(min-width: 1158px)"
-          />
-          <source
+          media="(min-width: 1158px)"
+        />
+        <source
           srcset="/HarvestJoy/assets/woman-pouring-juice-tab-45BCa7mq.webp 1x, /HarvestJoy/assets/woman-pouring-juice-tab-2x-D4sTxxQ7.webp 2x"
-        media="(min-width: 768px)"
-          />
-          <source
+          media="(min-width: 768px)"
+        />
+        <source
           srcset="/HarvestJoy/assets/woman-pouring-juice-mob-CmrC7zwk.webp 1x, /HarvestJoy/assets/woman-pouring-juice-mob-2x-Dvja54lV.webp 2x"
-        media="(max-width: 767px)"
-          />
-          <img srcset="./src/img/harvest/woman-pouring-juice.webp 1x, ./src/img/harvest/woman-pouring-juice-2x.webp 2x"
-        src="../img/harvest/woman-pouring-juice.webp" alt="Woman with juice" class="harvest-img" 
-        width="1280">
+          media="(max-width: 767px)"
+        />
+        <img
+          srcset="./src/img/harvest/woman-pouring-juice.webp 1x, ./src/img/harvest/woman-pouring-juice-2x.webp 2x"
+          src="../img/harvest/woman-pouring-juice.webp"
+          alt="Woman with juice"
+          class="harvest-img"
+          width="1280"
+          loading="lazy"
+        />
       </picture>
-      
-         <p class="network-p">Follow us on our social networks:</p>
-           <ul class="soc-items">
-           <li><a class="soc-link slash-span">Instagram</a></li>
-           <li><a class="soc-link slash-span"> Facebook</a></li>
-           <li><a class="soc-link"> Youtube</a></li>
-           </ul>
-    </div>
 
+      <p class="network-p">Follow us on our social networks:</p>
+      <ul class="soc-items">
+        <li><a class="soc-link slash-span">Instagram</a></li>
+        <li><a class="soc-link slash-span"> Facebook</a></li>
+        <li><a class="soc-link"> Youtube</a></li>
+      </ul>
     </div>
-   
-  
-
+  </div>
 </section>
+
     </main>
 
     <footer class="footer">
