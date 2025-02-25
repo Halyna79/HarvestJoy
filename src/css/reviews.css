@@ -143,11 +143,12 @@
 }
 
 @media (min-width: 1280px) {
-  .reviews-item {
-    flex-basis: calc((100% - 24px * 2) / 3);
+  .reviews-list {
+    animation: none;
   }
 
   .reviews-item {
+    flex-basis: calc((100% - 24px * 2) / 3);
     padding-inline: 27px;
   }
 }

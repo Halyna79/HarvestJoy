@@ -1,3 +1,4 @@
+import './css/styles.css'
 import { setupFooterModals } from "./js/footer.js";
 
 document.addEventListener("DOMContentLoaded", function () {
