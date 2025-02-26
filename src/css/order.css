@@ -33,8 +33,8 @@
 }
 
 .order-image {
-  width: 100%;
-  aspect-ratio: 335 / 452;
+  width: 335px;
+  height: 452px;
   object-fit: cover;
   object-position: center;
 }
@@ -118,7 +118,8 @@
   }
 
   .order-image {
-    aspect-ratio: 1;
+    width: 640px;
+    height: 640px;
   }
 
   .order-desc-box {
@@ -159,7 +160,8 @@
   }
 
   .order-image {
-    aspect-ratio: 440 / 560;
+    width: 440px;
+    height: 560px;
   }
 
   .order-desc-box {
