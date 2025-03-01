@@ -25,7 +25,7 @@ body {
 }
 
 *,
-*::after
+*::after,
 *::before {
   box-sizing: inherit;
 }

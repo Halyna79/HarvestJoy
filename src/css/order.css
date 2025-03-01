@@ -32,6 +32,13 @@
   overflow: hidden;
 }
 
+.order-image {
+  width: 335px;
+  height: 452px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .order-desc-box {
   padding: 80px 20px;
   background-color: var(--color-green);
@@ -110,6 +117,11 @@
     padding: 100px 64px;
   }
 
+  .order-image {
+    width: 640px;
+    height: 640px;
+  }
+
   .order-desc-box {
     padding: 100px 164px;
   }
@@ -145,6 +157,11 @@
   .order-image-box {
     flex: 0 0 50%;
     padding: 100px 100px;
+  }
+
+  .order-image {
+    width: 440px;
+    height: 560px;
   }
 
   .order-desc-box {

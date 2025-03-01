@@ -17,6 +17,7 @@
   "author": "Halyna Bandurka <galinabandurka7@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "rollup-plugin-postcss": "^4.0.2",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }

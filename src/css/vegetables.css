@@ -55,8 +55,8 @@
 }
 
 .ov-image {
-  width: 100%;
-  height: 100%;
+  width: 280px;
+  height: 240px;
   object-fit: cover;
   object-position: center;
 }
@@ -91,6 +91,10 @@
 
   .ov-image-container {
     margin-top: 8px;
+    height: 244px;
+  }
+
+  .ov-image {
     height: 244px;
   }
 }
