@@ -1,7 +1,7 @@
 
 export function setupModalMenu () {
 
-const mobMenu = document.querySelector(".mobMenu");
+const mobMenu = document.querySelector(".mob-menu");
 const closeBtn = document.querySelector(".btn-close");
 const openBtn = document.querySelector(".header-btn");
 
