@@ -20,7 +20,7 @@ export function updateURLOnScroll() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const sectionId = entry.target.id;
-                history.replaceState(null, null, `#${sectionId}`);
+                history.replaceState(null, null, `${sectionId}`);
             }
         });
     }, {
