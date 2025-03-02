@@ -13,3 +13,21 @@ export function enableSmoothScroll() {
         });
     });
 }
+
+export function updateURLOnScroll() {
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const sectionId = entry.target.id;
+                history.replaceState(null, null, `#${sectionId}`);
+            }
+        });
+    }, {
+        root: null,
+        threshold: 0.5
+    });
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+}
